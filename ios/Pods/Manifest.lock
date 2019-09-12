@@ -1,0 +1,116 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - CJBase (0.11):
+    - AFNetworking
+    - MBProgressHUD
+    - NIMKit
+    - NIMSDK_LITE
+    - Reachability
+    - YYModel
+  - Flutter (1.0.0)
+  - M80AttributedLabel (1.6.3)
+  - MBProgressHUD (1.1.0)
+  - nim_sdk_util (0.0.1):
+    - Flutter
+    - NIMKit
+  - NIMKit (2.11.11):
+    - NIMKit/Lite (= 2.11.11)
+  - NIMKit/Core (2.11.11):
+    - M80AttributedLabel (~> 1.6.3)
+    - SDWebImage (~> 4.4.6)
+    - Toast (~> 3.0)
+    - TZImagePickerController (~> 3.0.7)
+  - NIMKit/Lite (2.11.11):
+    - NIMKit/Core
+    - NIMSDK_LITE (~> 6.5.5)
+  - NIMSDK_LITE (6.5.5)
+  - Reachability (3.2)
+  - SDWebImage (4.4.7):
+    - SDWebImage/Core (= 4.4.7)
+  - SDWebImage/Core (4.4.7)
+  - shared_preferences (0.0.1):
+    - Flutter
+  - Toast (3.1.0)
+  - TZImagePickerController (3.0.9)
+  - WechatOpenSDK (1.8.4)
+  - wx_sdk (0.0.1):
+    - Flutter
+    - NIMKit
+    - WechatOpenSDK
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking
+  - CJBase (~> 0.11)
+  - Flutter (from `.symlinks/flutter/ios`)
+  - MBProgressHUD
+  - nim_sdk_util (from `.symlinks/plugins/nim_sdk_util/ios`)
+  - NIMKit
+  - NIMSDK_LITE
+  - Reachability (~> 3.2)
+  - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
+  - WechatOpenSDK
+  - wx_sdk (from `.symlinks/plugins/wx_sdk/ios`)
+  - YYModel
+
+SPEC REPOS:
+  https://git.xq5.com/cajian/CJBase_flutter_iOS.git:
+    - CJBase
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - M80AttributedLabel
+    - MBProgressHUD
+    - NIMKit
+    - NIMSDK_LITE
+    - Reachability
+    - SDWebImage
+    - Toast
+    - TZImagePickerController
+    - WechatOpenSDK
+    - YYModel
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+  nim_sdk_util:
+    :path: ".symlinks/plugins/nim_sdk_util/ios"
+  shared_preferences:
+    :path: ".symlinks/plugins/shared_preferences/ios"
+  wx_sdk:
+    :path: ".symlinks/plugins/wx_sdk/ios"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CJBase: 2d0a2f9f0b831cc4edc78aded1648e50e4d6cc74
+  Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
+  M80AttributedLabel: d06543195d3e451d2ea62ad76d04aa9cea7661d4
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  nim_sdk_util: 98a3316d5fbab472afc31a2cea4061b4a8f6bdd8
+  NIMKit: 6c1d0d9d811fdf1c3280a033a194506dcdfd45ce
+  NIMSDK_LITE: 8af68f798030906861a61459f93dba2d4fd2631d
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
+  shared_preferences: 1feebfa37bb57264736e16865e7ffae7fc99b523
+  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
+  TZImagePickerController: ea3e906af8caa7088f612ad673feb73cc6aa6bfc
+  WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
+  wx_sdk: a363566eb1fefe7d6e6a6d067d055202c3b80fdf
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 728a24500941ed7763e36e0e7ccfd214b8909a9e
+
+COCOAPODS: 1.7.2
