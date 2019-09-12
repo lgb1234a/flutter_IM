@@ -33,7 +33,7 @@ app/
 
 ### 如何管理页面堆栈
 
-在解决这个问题的时候，我走了很多弯路，一开始打算是flutter为主，native为辅（毕竟是从零开始的新项目），然后在管理堆栈的时候遇到很多挑战，这种做法在flutter--push-->flutter很简单，当我要flutter--push-->native或者native--push-->flutter的时候，就蒙圈了。当时找了咸鱼的flutter_boost解决方案，奈何他们的flutter版本还未支持到1.7，集成进来之后各种问题，遂放弃之。
+在解决这个问题的时候，我走了很多弯路，一开始打算是flutter为主，native为辅（毕竟是从零开始的新项目），然后在管理堆栈的时候遇到很多挑战，这种做法在flutter--push-->flutter很简单，当我要flutter--push-->native或者native--push-->flutter的时候，就蒙圈了。当时找了闲鱼的flutter_boost解决方案，奈何他们的flutter版本还未支持到1.7，集成进来之后各种问题，遂放弃之。
 
 随后我改变思路，采用以native为骨架，flutter为血肉的方式将我这个剪不断理还乱的工程重构了一遍。先抽出来一个继承自`FlutterViewController`的基类`CJViewController`，然后提供一个初始化方法`- (instancetype)initWithFlutterOpenUrl:(NSString *)openUrl;`，通过`FlutterViewController`的`setInitialRoute`方法，这样外界传入一个自定义好的路由url，就可以解析到对应的flutter页面，并且可以由native来进行堆栈管理，也可以采用flutter `Navigator`的转场方式跳转到另一个flutter页面。
 
